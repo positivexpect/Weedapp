@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavBar from './NavBar';
 
 const MasterReview = () => {
   const [inhaled, setInhaled] = useState('');
