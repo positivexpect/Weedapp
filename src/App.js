@@ -7,6 +7,8 @@ import BasicReview from './components/BasicReview';
 import SearchReviews from './components/SearchReviews';
 import TerpTraining from './components/TerpTraining';
 
+console.log("New App Loaded");
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,8 @@ function App() {
         <Route path="/basic-review" component={BasicReview} />
         <Route path="/search" component={SearchReviews} />
         <Route path="/training" component={TerpTraining} />
+        {/* Catch-all for unmatched routes */}
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );
