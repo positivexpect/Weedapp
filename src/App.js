@@ -1,11 +1,11 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import MasterReview from './components/MasterReview';
-import BasicReview from './components/BasicReview';
-import SearchReviews from './components/SearchReviews';
-import TerpTraining from './components/TerpTraining';
+import Home from './components/Home.js';
+import MasterReview from './components/MasterReview.js';
+import BasicReview from './components/BasicReview.js';
+import SearchReviews from './components/SearchReviews.js';
+import TerpTraining from './components/TerpTraining.js';
 
 console.log("New App Loaded");
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/search" component={SearchReviews} />
         <Route path="/training" component={TerpTraining} />
         {/* Catch-all for unmatched routes */}
-        <Route component={NotFound} />
+        <Route component={"NotFound"} />
       </Switch>
     </Router>
   );
